@@ -1,0 +1,38 @@
+<!--
+  File: index.ejs
+  Author: Nahia Akter
+  StudentID: 301106956
+  Date: Oct 11, 2020
+-->
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!-- Main content-->
+  <main>
+   <% if(title == "Home") { %>
+        <%- include home.ejs %>
+    <% } %>
+
+    <% if(title == "About") { %>
+        <%- include about_me.ejs %>
+    <% } %>
+
+    <% if(title == "Projects") { %>
+        <%- include projects.ejs %>
+    <% } %>
+
+    <% if(title == "Services") { %>
+        <%- include services.ejs %>
+    <% } %>
+
+    <% if(title == "Contact") { %>
+        <%- include contact_me.ejs %>
+    <% } %>
+    </main>
+  
+<%- include partials/bottom_nav.ejs %>
+  
+<%- include partials/footer.ejs %>
+
+  
