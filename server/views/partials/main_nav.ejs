@@ -42,12 +42,23 @@
           <a class="nav-link" href="/services"><i class="fas fa-briefcase"></i> Services</a>
         </li>
 
+         <% if (title == "Contacts") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/contactlist"><i class="fas fa-clipboard-list"></i> Contact List</a>
+        </li>
+
         <% if (title == "Contact") { %>
         <li class="nav-item active">
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/contact_me"><i class="fas fa-phone-square-alt"></i> Contact</a>
+          <a class="nav-link" href="/contact_me"><i class="fas fa-phone-square-alt"></i> Contact Me</a>
         </li>
+
+       
+
     </div>
   </nav>
