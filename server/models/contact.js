@@ -6,10 +6,6 @@
 */
 let mongoose = require('mongoose');
 
-//let Schema = mongoose.Schema; // alias
-//let Model = mongoose.model; // alias
-//let passportLocalMongoose = require('passport-local-mongoose');
-
 //create a model class
 let contactModel = mongoose.Schema({
     name: String,

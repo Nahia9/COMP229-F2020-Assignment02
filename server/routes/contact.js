@@ -8,12 +8,6 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-/*let jwt = require('jsonwebtoken');
-let passport = require('passport');*/
-
-//connect to our contactModel
-//let Contact = require('../models/contact');
-
 let contactControllers = require('../controllers/contact');
 
 // helper function for guard purposes
